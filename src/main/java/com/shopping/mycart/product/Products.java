@@ -1,25 +1,18 @@
 package com.shopping.mycart.product;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.io.Serializable;
-import java.util.Objects;
 
 public class Products implements Serializable {
 
-
     @JsonProperty("productName")
-       String productName;
-
+    String productName;
     @JsonProperty("prductQuantity")
-       int prductQuantity;
+    int prductQuantity;
 
-
-
-
-    public Products(int prductQuantity,String productName) {
+    public Products(int prductQuantity, String productName) {
         this.productName = productName;
-        this.prductQuantity=prductQuantity;
+        this.prductQuantity = prductQuantity;
     }
 
     public String getProductName() {
@@ -37,13 +30,6 @@ public class Products implements Serializable {
     public void setPrductQuantity(int prductQuantity) {
         this.prductQuantity = prductQuantity;
     }
-
-
-
-   /* @Override
-    public String toString() {
-        return productName ;
-    }*/
 
     @Override
     public String toString() {
